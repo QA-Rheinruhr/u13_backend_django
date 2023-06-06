@@ -1,0 +1,71 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+
+<!-- Titll setzten  -->
+{% block title %}
+  ihk11
+{% endblock %}
+
+
+{% block content %}
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <!-- NAV container (Back/Next) -->
+    <div class="flex-container">
+      <a class="btn btn-secondary" href="/django15">Back</a>
+      <a class="btn btn-primary" href="/">Next</a>
+    </div>
+
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+        </ul>
+        </aside>
+        <section>
+            <h1>Django Framework</h1>
+            <article>
+                <h1>Einfache Anleitung zum Einbinden des Frontend-Codes in Django</h1>
+
+                <h2>1. Verwendung des Master-Templates</h2>
+                <ol>
+                    <li>Erstelle ein HTML-Template für das Master-Template, z.B. "master.html".</li>
+                    <li>Definiere in diesem Template den HTML-Code für den Header, Footer und andere gemeinsame Elemente der Benutzeroberfläche.</li>
+                    <li>Verwende den Django Template Language-Syntax { % block content % }{ % endblock % }, um einen Bereich im Master-Template zu markieren, in den der spezifische Inhalt eingefügt werden kann.</li>
+                    <li>Speichere das Master-Template im Verzeichnis "templates" deiner Django-Anwendung.</li>
+                    <li>Erstelle für jede Unterseite deiner Anwendung ein spezifisches Template und erweitere es vom Master-Template. Verwende dazu den Django Template Language-Syntax { % extends 'master.html' % } am Anfang des Templates.</li>
+                    <li>Verwende den Django Template Language-Syntax { % block content % }Hier kommt der spezifische Inhalt der Unterseite{ % endblock % } im spezifischen Template, um den Inhalt in den entsprechenden Bereich des Master-Templates einzufügen.</li>
+                    <li>Speichere die spezifischen Templates ebenfalls im Verzeichnis "templates" deiner Django-Anwendung.</li>
+                </ol>
+            
+                <h2>2. Einbinden statischer Dateien</h2>
+                <ol>
+                    <li>Erstelle einen Ordner namens "static" im Hauptverzeichnis deiner Django-Anwendung.</li>
+                    <li>Innerhalb des "static"-Ordners kannst du weitere Unterordner für verschiedene Arten von statischen Dateien erstellen, z.B. "css" für CSS-Dateien oder "js" für JavaScript-Dateien.</li>
+                    <li>Kopiere die entsprechenden CSS- und JavaScript-Dateien in die entsprechenden Unterordner im "static"-Ordner.</li>
+                    <li>In deinen Django-HTML-Templates kannst du den Django Template Language-Syntax { % load static % } verwenden, um die Verwendung von statischen Dateien zu aktivieren.</li>
+                    <li>Verwende den Django Template Language-Syntax { % static 'pfad/zur/datei.css' % } oder {% static 'pfad/zur/datei.js' %} in den entsprechenden HTML-Templates, um die statischen Dateien einzubinden. Passe den Pfad entsprechend dem tatsächlichen Pfad zu den statischen Dateien an.</li>
+                </ol>
+            
+                <h2>3. Verlinken von Unterseiten in der Sub-App</h2>
+                <ol>
+                    <li>In deinem spezifischen Template kannst du den Django Template Language-Syntax { % url 'app_name:url_name' % } verwenden, um auf eine spezifische Unterseite in der Sub-App zu verlinken. Ersetze "app_name" durch den Namen der Sub-App und "url_name" durch den Namen der URL-Konfiguration für die Unterseite.</li>
+                </ol>
+            
+                <p>
+                    Durch die Verwendung des Master-Templates, das Einbinden statischer Dateien und das Verlinken von Unterseiten in der Sub-App können deine Schüler ihren Frontend-Code effektiv in ihre Django-Anwendung integrieren und eine konsistente Benutzeroberfläche mit wiederverwendbaren Komponenten erstellen.
+                </p>
+            </article>
+        </section>
+
+
+
+      
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+  {% endblock %}

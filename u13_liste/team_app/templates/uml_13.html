@@ -1,0 +1,54 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+
+<!-- Titll setzten  -->
+{% block title %}
+  ihk11
+{% endblock %}
+
+
+{% block content %}
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <!-- NAV container (Back/Next) -->
+    <div class="flex-container">
+      <a class="btn btn-secondary" href="/uml12">Back</a>
+      <a class="btn btn-primary" href="/uml14">Next</a>
+    </div>
+
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+        </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Text</h2>
+                <img src="{% static 'img/django/Django_text_aktivitätsdiagramm.png' %}" alt="">
+            </article>
+        </section>
+        
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <h3>Aktivitätsdiagramm</h3>
+                <img src="{% static 'img/django/Django_aktivitätsdiagramm.png' %}" alt="">
+            </article>
+        </section>
+
+
+
+
+
+
+        
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+  {% endblock %}

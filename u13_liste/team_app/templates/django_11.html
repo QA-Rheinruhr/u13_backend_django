@@ -1,0 +1,69 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+
+<!-- Titll setzten  -->
+{% block title %}
+  ihk11
+{% endblock %}
+
+
+{% block content %}
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+
+    <!-- NAV container (Back/Next) -->
+    <div class="flex-container">
+      <a class="btn btn-secondary" href="/">Back</a>
+      <a class="btn btn-primary" href="/django12">Next</a>
+    </div>
+
+    
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+        </ul>
+        </aside>
+        <section>
+            <h1>Django Framework</h1>
+            <article>
+                <p>
+                    Django ist ein Python-Webframework, das bei der Entwicklung von Webanwendungen verwendet wird. Es folgt dem Modell-View-Controller (MVC)-Architekturmuster, bei dem die Modelle die Datenbank repräsentieren, die Views die Logik für die Darstellung der Daten steuern und die Controller die Interaktionen zwischen Modellen und Views handhaben.
+                </p>
+            
+                <h2>Vorteile von Django</h2>
+                <ul>
+                    <li>Einfache und intuitive Syntax: Django bietet eine klare und einfache Syntax, die das Schreiben von Code erleichtert.</li>
+                    <li>Robuste Dokumentation: Das Django-Framework verfügt über umfassende und gut strukturierte Dokumentation, die Anfängern den Einstieg erleichtert.</li>
+                    <li>Reichhaltige Funktionen: Django bietet eine Vielzahl von Funktionen und Modulen, die häufig in Webanwendungen benötigt werden, wie z.B. Benutzerauthentifizierung, Admin-Oberfläche, ORM (Object-Relational Mapping) und Formulare.</li>
+                    <li>Skalierbarkeit: Django wurde entwickelt, um skalierbare Webanwendungen zu erstellen und bewältigt auch komplexe Projekte mit einer großen Benutzerzahl.</li>
+                    <li>Sicherheit: Django legt großen Wert auf Sicherheit und bietet Schutzmechanismen gegen häufige Webangriffe wie Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF) und SQL-Injektion.</li>
+                </ul>
+            
+                <h2>Nachteile von Django</h2>
+                <ul>
+                    <li>Komplexität: Da Django ein umfangreiches Framework ist, kann es für Anfänger anfangs komplex erscheinen.</li>
+                    <li>Lernkurve: Aufgrund der zahlreichen Funktionen und Konzepte kann es eine gewisse Zeit dauern, um sich mit Django vertraut zu machen und seine Funktionalitäten vollständig zu verstehen.</li>
+                    <li>Overhead: Django kann aufgrund seiner umfangreichen Funktionen einen gewissen Overhead verursachen, insbesondere wenn nur eine einfache Webanwendung entwickelt werden soll.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <h2>Django MVT - Pattern</h2>
+                <img src="../img/django/Django-MVT-pattern.webp" alt="" srcset="">
+            </article>
+        </section>
+
+      
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+  {% endblock %}

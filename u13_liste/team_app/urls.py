@@ -24,7 +24,7 @@ urlpatterns = [
     path('uml21/', views.uml21, name='uml21'),
     path('uml22/', views.uml22, name='uml22'),
     path('uml23/', views.uml23, name='uml23'),
-    path('uml24/', views.uml23, name='uml24'),
+    path('uml24/', views.uml24, name='uml24'),
     # GitHub
     path('github11/', views.github11, name='github11'),
     path('github12/', views.github12, name='github12'),
@@ -37,5 +37,5 @@ urlpatterns = [
     path('django13/', views.django13, name='django13'),
     path('django14/', views.django14, name='django14'),
     path('django15/', views.django15, name='django15'),
-    path('django16/', views.django15, name='django16'),
+    path('django16/', views.django16, name='django16'),
 ]

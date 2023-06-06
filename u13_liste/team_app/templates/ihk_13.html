@@ -1,0 +1,99 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+
+<!-- Titll setzten  -->
+{% block title %}
+  ihk11
+{% endblock %}
+
+
+{% block content %}
+
+    <!-- START Content  -->
+    <div class="container content" style="margin-top: 69px;/* height: auto; */">
+
+      <!-- NAV container (Back/Next) -->
+      <div class="flex-container">
+        <a class="btn btn-secondary" href="/ihk12">Back</a>
+        <a class="btn btn-primary" href="/ihk14">Next</a>
+      </div>
+
+      <!-- Start grid -->
+      <div class="grid-container">
+  
+          <!-- Frist Content Block:  -->
+          <!-- AUFGABE -->
+          <aside>
+            <h3>Tipps</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/js/js_if_else.asp">if else</a></li>
+                <li><a href="https://www.w3schools.com/js/js_loop_for.asp">Loops</a></li>
+                <li><a href="https://www.w3schools.com/js/js_functions.asp">functions</a></li>
+                <li><a href="https://www.w3schools.com/jsref/event_onclick.asp">onclick</a></li>
+                <li><a href="https://www.w3schools.com/jsref/event_onclick.asp">getElementById</a></li>
+              </ul>
+          </aside>
+          <section>
+              <article>
+                <h2>IHK - 1.2</h2>
+                <h3>Aufgabe: Daten Auswertung</h3>
+                <img src="../img/12_auswertung/auswertung.png" alt="IHK Aufgabe: psudocode" srcset="">
+
+            </article>
+          </section>
+  
+          <!-- Second Content Block  -->
+          <!-- PLANUNG -->
+          <aside>
+            <h3>Tipps</h3>
+            <p>Hier soll entweder ein PAP, Pseudocode oder Struktugramm zur Planung vor der Codierung in JavaScript erstellt werden.</p>
+        </aside>
+          <section>
+              <article><h2>Planung</h2></article>
+                <h3>Struktogramme</h3>
+                <h4>Simple</h4>
+                <img src="../img/" alt="">
+                <h4>u13 Drawing - whiteboard</h4>
+                <img src="../img/" alt="" srcset="">
+                <h4>Detailed</h4>
+                <img src="../img/" alt="">
+                <br>
+                <h3>Pseudocode</h3>
+                <img src="../img/" alt="">
+                <h3>PAP</h3>
+          </section>
+  
+          <!-- Third Content Block  -->
+          <!-- Lösung -->
+          <aside>            
+            <h3>Tipps</h3>
+            <ul>
+              <li><a href="">getElementById</a></li>
+              <li><a href="">Array</a></li>
+            </ul></aside>
+          <section>
+            <article>
+                <h2>IHK1.2 - Data Analysis - JS</h2>
+                <p id="output_data"></p>
+                <button onclick="analyseData()">analyseData</button>
+                <p id="output_durchschnittsAlter"></p>
+                <p id="output_anteil_prozentual"></p>
+            </article>
+
+          </section>
+  
+
+  
+  
+  
+  
+          
+      </div>
+  </div>
+  <!-- ENDE Content  -->
+
+  <script src="{%  static 'js/dataAnalysis.js' %}">
+
+  </script>
+  <!-- ENDE Content  -->
+  {% endblock %}

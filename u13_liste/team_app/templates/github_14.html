@@ -1,0 +1,73 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+
+<!-- Titll setzten  -->
+{% block title %}
+  ihk11
+{% endblock %}
+
+
+{% block content %}
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <!-- NAV container (Back/Next) -->
+    <div class="flex-container">
+      <a class="btn btn-secondary" href="/github13">Back</a>
+      <a class="btn btn-primary" href="/github15">Next</a>
+    </div>
+
+    
+    <div class="grid-container">
+
+        
+        <!-- first Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>GitHub Repository forken</h1>
+            <article>
+
+
+                <p>
+                    Das Forken eines Repositorys auf GitHub ermöglicht es dir, eine persönliche Kopie des Repositorys unter deinem eigenen GitHub-Account zu erstellen. Dadurch kannst du Änderungen am Repository vornehmen, ohne das Original-Repository zu beeinflussen. Hier ist eine Anleitung zum Forken eines Repositorys:
+                </p>
+            
+                <ol>
+                    <li>Rufe die GitHub-Website (<a href="https://github.com/">https://github.com/</a>) auf und gehe zum Repository, das du forken möchtest.</li>
+                    <li>Klicke auf den Button "Fork" (Forken) in der oberen rechten Ecke der Repository-Seite.</li>
+                    <li>GitHub wird eine Kopie des Repositorys unter deinem GitHub-Account erstellen.</li>
+                    <li>Nachdem das Forken abgeschlossen ist, wirst du zur Seite deines geforkten Repositorys weitergeleitet.</li>
+                    <li>Jetzt kannst du Änderungen an dem geforkten Repository vornehmen.</li>
+                </ol>
+            
+                <p>
+                    Beachte, dass das geforkte Repository anfänglich mit dem Original-Repository verbunden bleibt. Das bedeutet, dass wenn das Original-Repository aktualisiert wird, du diese Änderungen übernehmen kannst, um dein geforktes Repository auf dem neuesten Stand zu halten.
+                </p>
+            
+                <p>
+                    Wenn du Änderungen vorgenommen hast und diese zur Verfügung stellen möchtest, kannst du eine Pull-Anfrage (Pull Request) erstellen. Dadurch kannst du dem Eigentümer des Original-Repositorys deine Änderungen vorstellen und darum bitten, dass diese in das Original-Repository übernommen werden.
+                </p>
+                <img src="{% static 'img/Github/Github_fork.png' %}" alt="" srcset="">
+
+            </article>
+
+        </section>
+
+
+
+
+
+
+
+
+        
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+  {% endblock %}

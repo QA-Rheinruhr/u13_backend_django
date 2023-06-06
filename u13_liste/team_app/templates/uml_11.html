@@ -1,0 +1,71 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+
+<!-- Titll setzten  -->
+{% block title %}
+  ihk11
+{% endblock %}
+
+
+{% block content %}
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <!-- NAV container (Back/Next) -->
+    <div class="flex-container">
+      <a class="btn btn-secondary" href="/">Back</a>
+      <a class="btn btn-primary" href="/uml12">Next</a>
+    </div>
+
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+            <h3>Tipps</h3>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+                <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Aktivitätsdiagramme</h2>
+                <p>Aktivitätsdiagramme sind ein wichtiger Bestandteil der Unified Modeling Language (UML) und dienen dazu, Geschäftsprozesse, Systemabläufe oder Verhaltensweisen zu visualisieren. Als Umschüler im Bereich Fachinformatik sollten Sie über folgende Aspekte Bescheid wissen:</p>
+                
+                <h3>Struktur von Aktivitätsdiagrammen</h3>
+                <ul>
+                    <li>Aktivitätsdiagramme bestehen aus Aktionen, Kontrollflüssen, Entscheidungen und Verzweigungen.</li>
+                    <li>Aktionen repräsentieren einzelne Aktivitäten oder Operationen.</li>
+                    <li>Kontrollflüsse zeigen die Reihenfolge der Aktivitäten an.</li>
+                    <li>Entscheidungen werden mit bedingten Verzweigungen dargestellt, basierend auf bestimmten Kriterien oder Bedingungen.</li>
+                    <li>Parallele Abläufe können verwendet werden, um gleichzeitige Aktivitäten darzustellen.</li>
+                </ul>
+                
+                <h4>Anwendung von Aktivitätsdiagrammen</h4>
+                <p>Aktivitätsdiagramme helfen dabei, komplexe Geschäftsprozesse oder Systemabläufe besser zu verstehen und zu dokumentieren. Sie können eingesetzt werden, um:</p>
+                <ul>
+                    <li>den Ablauf von Aufgaben oder Prozessen zu modellieren und zu analysieren</li>
+                    <li>Entscheidungen und Verzweigungen in einem System darzustellen</li>
+                    <li>parallele Aktivitäten oder alternative Abläufe zu visualisieren</li>
+                    <li>den Informationsfluss zwischen verschiedenen Akteuren oder Komponenten zu veranschaulichen</li>
+                </ul>
+                
+                <h5>Wichtigkeit für die Fachinformatik</h5>
+                <p>Als Fachinformatiker für Systemintegration sollten Sie in der Lage sein, Aktivitätsdiagramme zu lesen, zu interpretieren und zu erstellen. Dies ist wichtig, um Systemabläufe zu verstehen, zu analysieren und gegebenenfalls zu optimieren. Aktivitätsdiagramme können auch bei der Kommunikation mit Kunden, Entwicklern und anderen Stakeholdern hilfreich sein, um komplexe Zusammenhänge verständlich darzustellen.</p>
+                
+                <p>Es empfiehlt sich, Aktivitätsdiagramme anhand von Beispielen zu üben und zu verstehen, um sicherzustellen, dass Sie sie in Ihrer Abschlussprüfung erfolgreich anwenden können.</p>
+            </article>
+        </section>
+
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <H2>IHK-Belegsatz</H2>
+                <img src="{% static 'img/uml/Belegsatz_UML_Aktivitaetsdiagramm.png' %}" alt="" srcset="">
+            </article>
+        </section>
+      
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+  {% endblock %}

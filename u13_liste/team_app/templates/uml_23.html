@@ -1,0 +1,62 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+
+<!-- Titll setzten  -->
+{% block title %}
+  ihk11
+{% endblock %}
+
+
+{% block content %}
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+
+    
+    <!-- NAV container (Back/Next) -->
+    <div class="flex-container">
+      <a class="btn btn-secondary" href="/uml22">Back</a>
+      <a class="btn btn-primary" href="/uml24">Next</a>
+    </div>
+
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
+        </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Aufgabe:</h2>
+                <p>
+                  Arbeiten sie folgendes UML Aktivitätsdiagramm in ein Squenzdiagramm um.
+                  Der Übergabe Parameter des Clients ist: 'https://localhost:8000/profile/17'.
+                  Arbeiten sie die Entscheidung ob die Datenbank Abfrage notwendug 
+                  ist der IHK Notation entsprechend ein.
+                </p>
+                <img src="{% static 'img/django/Django_aktivitätsdiagramm.png' %}" alt="">
+            </article>
+        </section>
+        
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <h3>Lösung: Django-UML-Sequenzdiagramm</h3>
+                <img src="" alt="">
+            </article>
+        </section>
+
+
+
+
+
+
+        
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+  {% endblock %}
