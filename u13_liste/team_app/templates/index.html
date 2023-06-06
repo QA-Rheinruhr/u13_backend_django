@@ -1,4 +1,5 @@
 {% extends "baseTemplate.html" %}
+{% load static %}
 
 <!-- Titll setzten  -->
 {% block title %}
@@ -68,8 +69,8 @@
                 Verlinken sie unter der Vorlage ihr eigene Ergebnis!
               </p>
               <h3>Vorlage:</h3>
-              <img src="../img/HTML_layout.png" alt="" srcset="">
-              <h3>Eigenes Ergebnis: <a href="/statics/html/baseTemplateU13.html">Base Template</a></h3>
+              <img src="{% static 'img/HTML_layout.png' %}" alt="" srcset="">
+              <h3>Eigenes Ergebnis: <a href="/static/html/baseTemplateU13.html">Base Template</a></h3>
             </article>
         </section>
 
@@ -86,11 +87,11 @@
           <article>
             <article>
               <h2>IHK - Aufgaben</h2>
-              <h4><a class="heading-link" href="ihk_11.html">Bubblesort <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="ihk_12.html">Datenauswertung <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="ihk_13.html">String Kompression<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="ihk_14.html">getAppointment<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="ihk_14.html">Passwort Generator<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="ihk_11.html">Bubblesort <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="ihk_12.html">Datenauswertung <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="ihk_13.html">String Kompression<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="ihk_14.html">getAppointment<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="ihk_14.html">Passwort Generator<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
             </article>
           </article>
         </section>
@@ -117,18 +118,18 @@
             </article>
 
             <article>
-              <h2><a class="heading-link" href="uml_11.html">UML-Aktivitätsdiagramm <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h2>
-              <h4><a class="heading-link" href="uml_12.html">IHK-Aufgabe <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="uml_13.html">Django: Aktivitätsdiagramm<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="uml_14.html">Cheatsheet: Aktivitätsdiagramm<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
+              <h2><a class="heading-link" href="uml_11.html">UML-Aktivitätsdiagramm <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h2>
+              <h4><a class="heading-link" href="uml_12.html">IHK-Aufgabe <img src="{% static 'img/svg/arrow-right.svg" class="icon' %}" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="uml_13.html">Django: Aktivitätsdiagramm<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="uml_14.html">Cheatsheet: Aktivitätsdiagramm<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
               <hr>
             </article>
 
             <article>
-              <h2><a class="heading-link" href="uml_21.html">UML-Sequenzdiagramme <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h2>
-              <h4><a class="heading-link" href="uml_22.html">IHK-Aufgabe <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="uml_23.html">Django: Sequenzdiagramm<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="uml_24.html">Cheatsheet: Sequenzdiagramm<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
+              <h2><a class="heading-link" href="uml_21.html">UML-Sequenzdiagramme <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h2>
+              <h4><a class="heading-link" href="uml_22.html">IHK-Aufgabe <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="uml_23.html">Django: Sequenzdiagramm<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="uml_24.html">Cheatsheet: Sequenzdiagramm<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
               <hr>
             </article>
 
@@ -144,11 +145,11 @@
           <section>
             <article>
               <h2>GitHub</h2>
-              <h4><a class="heading-link" href="github_11.html">Github <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="github_12.html">Initialise Repository <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="github_13.html">Clone Repository <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="github_14.html">Fork Repository <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="github_15.html">Django Workflow <img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="github_11.html">Github <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="github_12.html">Initialise Repository <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="github_13.html">Clone Repository <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="github_14.html">Fork Repository <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="github_15.html">Django Workflow <img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
             </article>
           </section>
           
@@ -163,12 +164,12 @@
         <section>
             <article>
               <h2>Django Framework</h2>
-              <h4><a class="heading-link" href="django_11.html">Django MVT<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="django_12.html">Anleitung zu: W3 Django<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="django_13.html">MVC + Django MVT<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="django_14.html">Django MasterTemplate<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="django_15.html">Django Statics<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
-              <h4><a class="heading-link" href="django_17.html">Merge Frontend Code into Backend<img src="../img/svg/arrow-right.svg" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="django_11.html">Django MVT<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="django_12.html">Anleitung zu: W3 Django<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="django_13.html">MVC + Django MVT<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="django_14.html">Django MasterTemplate<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="django_15.html">Django Statics<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
+              <h4><a class="heading-link" href="django_17.html">Merge Frontend Code into Backend<img src="{% static 'img/svg/arrow-right.svg' %}" class="icon" alt="" srcset=""></a></h4>
             </article>
         </section>
 
